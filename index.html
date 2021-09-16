@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript to-do list</title>
 </head>
 <body>
-    <h1>giuliana tonta</h1>
-    <h1>caca</h1>
+    <div class="content">
+        <h1>My to-do list</h1>
+        <p>Add tasks to complete</p>
+        <form name="todo-add">
+            <input type="text" id="todo-entry-box" />
+            <select required name="priority" id="priority-select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="wait">it can wait..</option>
+                <option value="important">important</option>
+                <option value="yesterday">for yesterday..</option>
+            </select> 
+        </form>
+        <button id="add-button" class="pretty-button">Add</button>
+        <br />
+        <ol id="todo-list"></ol>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
